@@ -1,0 +1,29 @@
+{
+  "name": "hanwoolderink/ollama-laravel-client",
+  "description": "Ollama laravel client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hanwoolderink",
+      "email": "hanwoolderink@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "hanwoolderink/ollama-php-client": "1.0.*",
+    "illuminate/support": "^11.22"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hanwoolderink\\Ollama\\Laravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hanwoolderink\\Ollama\\Laravel\\Providers\\OllamaServiceProvider"
+      ]
+    }
+  }
+}
